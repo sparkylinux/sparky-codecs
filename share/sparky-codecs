@@ -1,0 +1,1 @@
+?package(sparky-codecs):needs="X11" section="Applications/Sound"        title="Codecs Installer" command="remsu /usr/bin/sparky-codecs" icon="gnome-audio"

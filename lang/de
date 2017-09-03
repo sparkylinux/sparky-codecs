@@ -1,0 +1,16 @@
+# German localization file for Sparky Codecs.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/25
+# Under the GNU GPL v2
+# Translated to German by Pete B. 2015/10/29
+
+LOCAL1="Beenden"
+LOCAL2="Codecs Installer"
+LOCAL3="Testen der Internet-Verbindung fehlgeschlagen!\n\nMöglicherweise besteht KEINE Internetverbindung oder der Repository Server ist offline.\n\nBitte prüfen und erneut versuchen."
+LOCAL4="Mit diesem Tool kann man Multimedia Codecs und Plugins installieren:"
+LOCAL5="Stelle sicher, dass das System auf dem neusten Stand ist bevor die Installation gestartet wird! \nSoll die Installation jetzt gestartet werden?"
+LOCAL6="Es wurden keine Pakete installiert! \nInstaller wird beendet..."
+LOCAL7="Wenn alles geklappt hat sind jetzt alle Codes und Plugins installiert.\nFalls nicht, versuche es erneut oder frag in den Sparky-Foren nach Hilfe.\n\nZum Beenden auf OK klicken"
+
+### .desktop file to be translated too
+# Name[de_DE]=Installiere Multimedia Codecs
+# Comment[de_DE]=Installiert Multimedia Codecs und Plugins

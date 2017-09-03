@@ -1,0 +1,16 @@
+# Archivo de localización en español para Sparky Codecs.
+# Copyright 2015 Fernando "seacat" Velo <seacat.linux@gmail.com> 2015/12/23
+# Bajo la licencia GNU GPL v2
+# Ultima actualización 2016/01/13
+
+LOCAL1="Salir"
+LOCAL2="Instalador de Codecs"
+LOCAL3="¡Falló la prueba de conexión a Internet!\n\nProbablemente Ud NO esté conectado a Internet o el servidor principal del repositorio se haya caído.\n\nVerifique esto e inténtelo nuevamente."
+LOCAL4="Esto instalará codecs multimedia y complementos, tales como"
+LOCAL5="Asegúrese que su sistema esté actualizado antes de comenzar con esto. \n¿Quiere instalar ahora?"
+LOCAL6="¡No se instaló ningún paquete! \nSalir ahora..."
+LOCAL7="Si todo salió bien, los codecs se deberían instalar ahora.\nSi no, inténtelo nuevamente o infórmelo al foro de Sparky.\n\nHacer clic en OK para salir."
+
+### .desktop file to be translated too
+# Name[es_AR]=Instalar codecs multimedia
+# Comment[es_AR]=Instala codecs multimedia y complementos

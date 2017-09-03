@@ -1,0 +1,81 @@
+#!/bin/bash
+
+# Sparky Codecs Installer lets you install all available multimedia codecs
+# and a web browser plugins via one click.
+# It installs support for: mp3, xvid/divx, dvd, java plugin, flash plugin, etc.
+#
+# Copyright 2014, 2015, 2016, 2017 Paweł "pavroo" Pijanowski <pavroo@onet.eu>
+# Licensed under the GPLv2 license
+# see /usr/share/common-licenses/GPL-2 
+# Last update 2017/07/09
+
+# get default's locale file
+DEFLOCDIR="/usr/share/sparky/sparky-codecs"
+if [ "`cat /etc/default/locale | grep de_DE`" != "" ]; then
+. $DEFLOCDIR/de
+elif [ "`cat /etc/default/locale | grep es_AR`" != "" ]; then
+. $DEFLOCDIR/es
+elif [ "`cat /etc/default/locale | grep fr_FR`" != "" ]; then
+. $DEFLOCDIR/fr
+elif [ "`cat /etc/default/locale | grep it_IT`" != "" ]; then
+. $DEFLOCDIR/it
+elif [ "`cat /etc/default/locale | grep ja_JP`" != "" ]; then
+. $DEFLOCDIR/ja
+elif [ "`cat /etc/default/locale | grep pl_PL`" != "" ]; then
+. $DEFLOCDIR/pl
+elif [ "`cat /etc/default/locale | grep pt_BR`" != "" ]; then
+. $DEFLOCDIR/pt_BR
+elif [ "`cat /etc/default/locale | grep pt_PT`" != "" ]; then
+. $DEFLOCDIR/pt_PT
+elif [ "`cat /etc/default/locale | grep ru_RU`" != "" ]; then
+. $DEFLOCDIR/ru
+elif [ "`cat /etc/default/locale | grep sv_SE`" != "" ]; then
+. $DEFLOCDIR/se
+else
+. $DEFLOCDIR/en
+fi
+
+testroot="`whoami`"
+
+if [ "$testroot" != "root" ]; then
+	/usr/bin/remsu $0 &
+fi
+
+DIALOG500="yad --window-icon=gnome-audio --width=550 --height=300 --center"
+DIALOG="yad --window-icon=gnome-audio --width=450 --height=200 --center"
+TITLE="--always-print-result --dialog-sep --image=gnome-audio --title="
+TEXT="--text="
+OKEXIT=" --button=Ok:0 --button=Exit:1"
+MSGBOX="--button=Ok:0"
+TITLETEXT="Sparky Codecs"
+if [ -f /opt/sparky/sparky-xterm ]; then
+. /opt/sparky/sparky-xterm
+else
+SPARKYXTERM="x-terminal-emulator"
+fi
+
+# checking connection
+PINGTEST=$(ping -c 1 debian.org | grep [0-9])
+
+if [ "$PINGTEST" = "" ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL3"
+	exit 1
+fi
+
+$DIALOG500 $TITLE"$TITLETEXT" $OKEXIT $TEXT"$LOCAL4 \n\nbrowser-plugin-vlc \nffmpeg \nflashplayer-mozilla \nicedtea-plugin \ngstreamer1.0-fluendo-mp3 \ngstreamer1.0-plugins-bad \ngstreamer1.0-plugins-ugly \nlibdvdcss2 \nlibdvdread4 \nlame \nx264 \nx265\n\n$LOCAL5"
+
+if [ "$?" != "0" ]; then
+
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL6"
+	exit 1
+
+else
+	$SPARKYXTERM -e "apt-get update"
+	$SPARKYXTERM -e "apt-get install gstreamer1.0-fluendo-mp3 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly x264 x265 libdvdcss2 libdvdread4 ffmpeg flashplayer-mozilla icedtea-plugin lame browser-plugin-vlc"
+
+	$SPARKYXTERM -e "apt-get install -f"
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL7"
+
+fi
+
+exit 0

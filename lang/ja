@@ -1,0 +1,17 @@
+# Japanese localization file for Sparky Codecs.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
+# Under the GNU GPL v2
+# Last update 2015/12/23
+# Translated to Japanese by BALLOON a.k.a. Fu-sen.
+
+LOCAL1="終了"
+LOCAL2="コーデックインストーラー"
+LOCAL3="インターネット接続に失敗しました！\n\nインターネットに接続されていないか、メインのリポジトリサーバがダウンしています。\n\n確認の上、再度行って下さい。"
+LOCAL4="次のマルチメディアコーデック・プラグインをインストールします:"
+LOCAL5="これを動作する前に、システムが最新の状態であることを確認して下さい \nインストールしてよろしいですか？"
+LOCAL6="パッケージはインストールされませんでした！ \n終了します..."
+LOCAL7="正常であればコーデックはインストールされいます。\nそうでない場合は再試行するか、Sparky のフォーラムに報告してください。\n\nOK のクリックで終了します。"
+
+### .desktop file to be translated too
+# Name[ja_JP]=マルチメディアコーデックのインストール
+# Comment[ja_JP]=マルチメディアコーデック・プラグインをインストールします

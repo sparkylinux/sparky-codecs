@@ -1,0 +1,16 @@
+# Svensk språkfil för Sparky Kodekinstallerare.
+# Copyright 2015 Johnny Rosenberg <johnny.a.rosenberg@gmail.com> 2015-10-26
+# Under GNU GPL v2
+# Senast uppdaterad 2015-10-26
+
+LOCAL1="Avsluta"
+LOCAL2="Kodekinstallerare"
+LOCAL3="Internetuppkopplingstestet misslyckades!\n\nDu är antagligen inte uppkopplad till Internet, eller så är huvudförrådets server nere.\n\nKontrollera detta och försök igen."
+LOCAL4="Detta kommer att installera multimediakodekarna och tilläggsprogram, såsom:"
+LOCAL5="Säkerställ att ditt system är uppdaterat innan du startar detta.\nVill du installera nu?"
+LOCAL6="Inga paket har installerats!\nAvslutar nu..."
+LOCAL7="Om allting gick bra är kodekarna installerade nu.\nOm inte, försök igen eller rapportera till Sparkys forum.\n\nKlicka OK för att avsluta."
+
+### .desktop file to be translated too
+# Name[sv_SE]=Installera multimediakodekar
+# Comment[sv_SE]=Installera multimediakodekar och tilläggsprogram

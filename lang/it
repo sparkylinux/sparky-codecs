@@ -1,0 +1,16 @@
+# File di localizzazione italiano per Sparky Codecs.
+# Copyright 2015 Carlo‚ "malato" Troiani <abbassolafrangetta@gmail.com> 23/10/2015
+# Rilasciato sotto licenza GNU GPL v2
+# Ultimo aggiornamento 23/10/2015
+
+LOCAL1="Esci"
+LOCAL2="Codecs Installer"
+LOCAL3="Test della connessione internet fallito!\n\nProbabilmente NON sei connesso ad internet od il server con i repository è offline.\n\nControlla e prova di nuovo."
+LOCAL4="Installa i codecs multimediali ed i plugin, come:"
+LOCAL5="Prima di iniziare, assicurati che il tuo sistema sia aggiornato. \nVuoii procedere con l'installazione adesso?"
+LOCAL6="Nessun pacchetto è stato installato! \nSto uscendo..."
+LOCAL7="Se tutto è andato per il meglio, i codecs dovrebbero essere stati installati.\nAltrimenti prova a riferire sui Forum di Sparky.\n\nClicca su OK per uscire."
+
+### .desktop file to be translated too
+# Name[it_IT]=Installa codec multimediali
+# Comment[it_IT]=Installa i codec multimediali ed i plugin
