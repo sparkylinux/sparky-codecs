@@ -1,7 +1,7 @@
 Sparky Codecs Installer
 This can install all available multimedia codecs and plugins via one click. It installs the installator only. To install all the codecs go to Menu Multimedia or Sparky APTus the Install tab and run Install Multimedia Codecs.
 
-Copyright (C) 2014-2016 Paweł Pijanowski and others, see copyright file.
+Copyright (C) 2014-2018 Paweł Pijanowski and others, see copyright file.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
