@@ -16,18 +16,14 @@
 
 if [ "$1" = "uninstall" ]; then
 	rm -f /usr/bin/sparky-codecs
-	rm -f /usr/lib/sparky-aptus/inst/sparky-codecs.desktop
-	rm -f /usr/share/applications/sparky-codecs.desktop
-	rm -f /usr/share/menu/sparky-codecs
 	rm -rf /usr/share/sparky/sparky-codecs
+	rm -f /usr/lib/sparky-aptus/codecs/*
 else
 	cp bin/* /usr/bin/
-	if [ ! -d /usr/lib/sparky-aptus/inst ]; then
-		mkdir -p /usr/lib/sparky-aptus/inst
+	if [ ! -d /usr/lib/sparky-aptus/codecs ]; then
+		mkdir -p /usr/lib/sparky-aptus/codecs
 	fi
-	cp lib/* /usr/lib/sparky-aptus/inst/
-	cp share/sparky-codecs.desktop /usr/share/applications/
-	cp share/sparky-codecs /usr/share/menu/
+	cp codecs/* /usr/lib/sparky-aptus/codecs/
 	if [ ! -d /usr/share/sparky/sparky-codecs ]; then
 		mkdir -p /usr/share/sparky/sparky-codecs
 	fi

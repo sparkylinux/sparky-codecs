@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=GStreamer Ugly Plugins
+Comment=GStreamer Ugly Plugins
+Exec=/usr/bin/sparky-codecs ugly
+Icon=gnome-audio
+Terminal=false
+Type=Application
+Categories=Multimedia;

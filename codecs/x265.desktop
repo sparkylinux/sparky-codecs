@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=x265
+Comment=H.265/HEVC video stream encoder
+Exec=/usr/bin/sparky-codecs x265
+Icon=gnome-audio
+Terminal=false
+Type=Application
+Categories=Multimedia;

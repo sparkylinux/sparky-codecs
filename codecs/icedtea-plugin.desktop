@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=IcedTea Plugin
+Comment=Open Java WWW Plugin
+Exec=/usr/bin/sparky-codecs icedtea
+Icon=java
+Terminal=false
+Type=Application
+Categories=Multimedia;

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=OpenJDK Java
+Comment=Full Java runtime environment
+Exec=/usr/bin/sparky-codecs openjdk
+Icon=java
+Terminal=false
+Type=Application
+Categories=Multimedia;

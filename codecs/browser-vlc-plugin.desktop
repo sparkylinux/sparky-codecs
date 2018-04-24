@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=WWW VLC Plugin
+Comment=WWW VLC Plugin
+Exec=/usr/bin/sparky-codecs vlc
+Icon=vlc
+Terminal=false
+Type=Application
+Categories=Multimedia;

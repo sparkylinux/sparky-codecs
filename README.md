@@ -27,6 +27,10 @@ sparky-remsu
 sparky-xterm (>= 0.2.0)
 iputils-ping
 
+Recommends:
+--------------
+sparky-aptus
+
 Install:
 -------------
 su (or sudo) 

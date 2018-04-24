@@ -6,8 +6,7 @@
 #
 # Copyright 2014-2018 Paweł "pavroo" Pijanowski <pavroo@onet.eu>
 # Licensed under the GPLv2 license
-# see /usr/share/common-licenses/GPL-2 
-# Last update 2018/03/29
+# Last update 2018/04/22
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-codecs"
@@ -35,69 +34,142 @@ else
 . $DEFLOCDIR/en
 fi
 
-testroot="`whoami`"
-if [ "$testroot" != "root" ]; then
-	/usr/bin/remsu $0 &
+TESTROOT="`whoami`"
+if [ "$TESTROOT" != "root" ]; then
+	echo " Must be root... Exiting"
+	exit 1
 fi
 
-DIALOG500="yad --window-icon=gnome-audio --width=550 --height=300 --fixed --center"
 DIALOG="yad --window-icon=gnome-audio --width=450 --height=200 --center"
 TITLE="--always-print-result --dialog-sep --image=gnome-audio --title="
 TEXT="--text="
-OKEXIT=" --button=Ok:0 --button=Exit:1"
 MSGBOX="--button=Ok:0"
-TITLETEXT="Sparky Codecs"
-if [ -f /usr/bin/sparky-xterm ];then
+BUTTONREMOVE="--button=$LOCAL8:3"
+BUTTONREINSTALL="--button=$LOCAL9:4"
+BUTTONINSTALL="--button=$LOCAL10:0"
+BUTTONEXIT="--button=$LOCAL1:1"
+TITLETEXT="$LOCAL2"
+INSTALL="apt-get install"
+REINSTALL="apt-get install --reinstall"
+UNINSTALL="apt-get purge"
+if [ -f /usr/bin/sparky-xterm ]; then
 	SPARKYXTERM="/usr/bin/sparky-xterm"
 else
 	echo "sparky-xterm is missing... Exiting..."
 	exit 1
 fi
-
 ARCH64="`uname -m | grep x86_64`"
 ARCH32="`uname -m | grep 686`"
 ARCHARM="`uname -m | grep arm`"
 
-# checking connection
+# check connection
 PINGTEST=$(ping -c 1 debian.org | grep [0-9])
 
-if [ "$PINGTEST" = "" ]; then
-	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"\n$LOCAL3"
-	exit 1
-fi
-
-$DIALOG500 $TITLE"$TITLETEXT" $OKEXIT $TEXT"\n$LOCAL4 \n\nbrowser-plugin-vlc \nffmpeg \nflashplayer-mozilla (i686/amd64) \nicedtea-plugin \ngstreamer1.0-fluendo-mp3 \ngstreamer1.0-plugins-bad \ngstreamer1.0-plugins-ugly \nlibdvd-pkg \nlibdvdread4 \nlame \nw32/64codecs (i686/amd64)\nx264 \nx265\n\n$LOCAL5"
-
-if [ "$?" != "0" ]; then
-
-	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"\n$LOCAL6"
-	exit 1
-
-else
-
-	if [ "$ARCH64" != "" ]; then
-
-		$SPARKYXTERM "apt-get update"
-		$SPARKYXTERM "apt-get install gstreamer1.0-fluendo-mp3 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly x264 x265 libdvd-pkg libdvdread4 ffmpeg flashplayer-mozilla icedtea-plugin lame browser-plugin-vlc w64codecs"
-		$SPARKYXTERM "apt-get install -f"
-		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"\n$LOCAL7"
-
-	elif [ "$ARCH32" != "" ]; then
-
-		$SPARKYXTERM "apt-get update"
-		$SPARKYXTERM "apt-get install gstreamer1.0-fluendo-mp3 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly x264 x265 libdvd-pkg libdvdread4 ffmpeg flashplayer-mozilla icedtea-plugin lame browser-plugin-vlc w632codecs"
-		$SPARKYXTERM "apt-get install -f"
-		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"\n$LOCAL7"
-	
-
-	elif [ "$ARCHARM" != "" ]; then
-		$SPARKYXTERM "apt-get update"
-		$SPARKYXTERM "apt-get install gstreamer1.0-fluendo-mp3 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly x264 x265 libdvd-pkg libdvdread4 ffmpeg icedtea-plugin lame browser-plugin-vlc"
-		$SPARKYXTERM "apt-get install -f"
-		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"\n$LOCAL7"
-
+# recive package name
+case $1 in
+  vlc)
+	PACKAGE="browser-plugin-vlc"
+     ;;
+  ffmpeg)
+	PACKAGE="ffmpeg"
+     ;;
+  mp3)
+	PACKAGE="gstreamer1.0-fluendo-mp3"
+     ;;
+  bad)
+	PACKAGE="gstreamer1.0-plugins-bad"
+     ;;
+  ugly)
+	PACKAGE="gstreamer1.0-plugins-ugly"
+     ;;
+  flash-chromium)
+	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL16\n$LOCAL15" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
 	fi
+	PACKAGE="flashplayer-chromium"
+     ;;
+  flash-mozilla)
+	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL16\n$LOCAL15" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="flashplayer-mozilla"
+     ;;
+  icedtea)
+	PACKAGE="icedtea-plugin"
+     ;;
+  libdvd-pkg)
+	PACKAGE="libdvd-pkg"
+     ;;
+  libdvdread)
+	PACKAGE="libdvdread4"
+     ;;
+  lame)
+	PACKAGE="lame"
+     ;;
+  mencoder)
+	PACKAGE="mencoder"
+     ;;
+  lame)
+	PACKAGE="lame"
+     ;;
+  openjdk)
+	PACKAGE="default-jre"
+     ;;
+  w3264codecs)
+	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL16\n$LOCAL15" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	elif [ "$ARCHA64" != "" ]; then
+		PACKAGE="w64codecs"
+	elif [ "$ARCHA32" != "" ]; then
+		PACKAGE="w32codecs"
+	fi
+     ;;
+  x264)
+	PACKAGE="x264"
+     ;;
+  x265)
+	PACKAGE="x265"
+     ;;
+esac
 
+# install, reinstall or remove a package now
+
+if [ -d /usr/share/doc/$PACKAGE ]; then
+	$DIALOG $TEXT"\n$LOCAL11\n$LOCAL12" $TITLE"$TITLETEXT" $BUTTONREMOVE $BUTTONREINSTALL $BUTTONEXIT
+	ret=$?
+	if [[ $ret -eq 3 ]]; then
+		$SPARKYXTERM "$UNINSTALL $PACKAGE"
+	elif [[ $ret -eq 4 ]]; then
+		if [ "$PINGTEST" = "" ]; then
+			$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"\n$LOCAL3"
+			exit 1
+		fi
+		$SPARKYXTERM "$REINSTALL $PACKAGE"
+	else
+		exit 1
+	fi
+elif [ ! -d /usr/share/doc/$PACKAGE ]; then
+	$DIALOG $TEXT"\n$LOCAL13" $TITLE"$TITLETEXT" $BUTTONINSTALL $BUTTONEXIT
+	if [ "$?" = "0" ]; then
+		if [ "$PINGTEST" = "" ]; then
+			$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"\n$LOCAL3"
+			exit 1
+		fi
+		$SPARKYXTERM "$INSTALL $PACKAGE"
+		if [ ! -d /usr/share/doc/$PACKAGE ]; then
+			$DIALOG $TEXT"\n$LOCAL14\n\n$LOCAL15" $TITLE"$TITLETEXT" $MSGBOX
+			exit 1
+		else
+			$DIALOG $TEXT"\n$LOCAL17\n\n$LOCAL15" $TITLE"$TITLETEXT" $MSGBOX
+			exit 1
+		fi
+	
+	elif [ "$?" != "0" ]; then
+		exit 1
+	fi
 fi
 
 exit 0

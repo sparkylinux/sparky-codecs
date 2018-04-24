@@ -2,7 +2,7 @@
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/25
 # Under the GNU GPL v2
 # Translated to German by Pete B. 2015/10/29
-
+# Last update 2018/04/19 by pavroo
 LOCAL1="Beenden"
 LOCAL2="Codecs Installer"
 LOCAL3="Testen der Internet-Verbindung fehlgeschlagen!\n\nMöglicherweise besteht KEINE Internetverbindung oder der Repository Server ist offline.\n\nBitte prüfen und erneut versuchen."
@@ -10,7 +10,16 @@ LOCAL4="Mit diesem Tool kann man Multimedia Codecs und Plugins installieren:"
 LOCAL5="Stelle sicher, dass das System auf dem neusten Stand ist bevor die Installation gestartet wird! \nSoll die Installation jetzt gestartet werden?"
 LOCAL6="Es wurden keine Pakete installiert! \nInstaller wird beendet..."
 LOCAL7="Wenn alles geklappt hat sind jetzt alle Codes und Plugins installiert.\nFalls nicht, versuche es erneut oder frag in den Sparky-Foren nach Hilfe.\n\nZum Beenden auf OK klicken"
-
+LOCAL8="Remove"
+LOCAL9="Reinstall"
+LOCAL10="Install"
+LOCAL11="This package is already installed."
+LOCAL12="What would you like to do now?"
+LOCAL13="Should I install the package you have chosen?"
+LOCAL14="Something is wrong! \nProbably you have stopped the installation, or your internet connection is broken, or the package is not availabel for you system version.\nCheck it out and try again."
+LOCAL15="Exiting..."
+LOCAL16="This package is not available for your system version."
+LOCAL17="The package has been successfully installed."
 ### .desktop file to be translated too
 # Name[de_DE]=Installiere Multimedia Codecs
 # Comment[de_DE]=Installiert Multimedia Codecs und Plugins

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=LAME
+Comment=MP3 encoding library (frontend)
+Exec=/usr/bin/sparky-codecs lame
+Icon=gnome-audio
+Terminal=false
+Type=Application
+Categories=Multimedia;

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=GStreamer Bad Plugins
+Comment=GStreamer Bad Plugins
+Exec=/usr/bin/sparky-codecs bad
+Icon=gnome-audio
+Terminal=false
+Type=Application
+Categories=Multimedia;

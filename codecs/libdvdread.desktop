@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=LibDVDRead
+Comment=Library for reading DVDs
+Exec=/usr/bin/sparky-codecs libdvdread
+Icon=media-optical
+Terminal=false
+Type=Application
+Categories=Multimedia;

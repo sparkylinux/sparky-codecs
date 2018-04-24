@@ -1,8 +1,7 @@
 ﻿# Fichier de localisation française de Sparky Codecs.
 # Copyright 2016 hiver <hiver@club-internet.fr> 2016/05/12
 # Sous licence GNU GPL v2
-# Dernière mise à jour 2016/06/05
-
+# Last update 2018/04/19 by pavroo
 LOCAL1="Quitter"
 LOCAL2="Installateur de Codecs"
 LOCAL3="Échec du test de la connexion internet!\n\nVous n'êtes probablement pas connecté à Internet ou bien le serveur du projet est hors-service.\n\nVérifiez et essayez à nouveau."
@@ -10,7 +9,16 @@ LOCAL4="Ceci va installer les codecs multimédias et les greffons tels que:"
 LOCAL5="Vérifiez que votre système est à jour avant de commencer.\n\nVoulez-vous installer maintenant?"
 LOCAL6="Aucun paquet n'a été installé! \nSortie..."
 LOCAL7="Si tout s'est bien passé les codecs doivent être installés à présent.\nSinon, essayez à nouveau et faites un rapport sur les forums de Sparky.\n\nCliquez sur OK pour quitter."
-
+LOCAL8="Remove"
+LOCAL9="Reinstall"
+LOCAL10="Install"
+LOCAL11="This package is already installed."
+LOCAL12="What would you like to do now?"
+LOCAL13="Should I install the package you have chosen?"
+LOCAL14="Something is wrong! \nProbably you have stopped the installation, or your internet connection is broken, or the package is not availabel for you system version.\nCheck it out and try again."
+LOCAL15="Exiting..."
+LOCAL16="This package is not available for your system version."
+LOCAL17="The package has been successfully installed."
 ### .desktop file to be translated too
 # Name[fr_FR]=Installer les codecs multimédia
 # Comment[fr_FR]=Installe les codecs multimédia et greffons

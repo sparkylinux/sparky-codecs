@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=FlashPlayer Mozilla
+Comment=FlashPlayer Mozilla Plugin
+Exec=/usr/bin/sparky-codecs flash-mozilla
+Icon=flash
+Terminal=false
+Type=Application
+Categories=Multimedia;

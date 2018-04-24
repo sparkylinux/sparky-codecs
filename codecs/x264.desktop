@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=x264
+Comment=Video encoder for the H.264/MPEG-4 AVC standard
+Exec=/usr/bin/sparky-codecs x264
+Icon=gnome-audio
+Terminal=false
+Type=Application
+Categories=Multimedia;

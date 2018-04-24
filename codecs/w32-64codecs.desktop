@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=w32/64 codecs
+Comment=Video codecs for popular proprietary formats not natively supported by mplayer
+Exec=/usr/bin/sparky-codecs w3264codecs
+Icon=mplayer
+Terminal=false
+Type=Application
+Categories=Multimedia;
