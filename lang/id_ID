@@ -1,0 +1,25 @@
+# Indonesian localization file for Sparky Codecs.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
+# Under the GNU GPL v2
+# Last update 2018/07/27 by pavroo
+# Translated to Indonesian by les kompie
+LOCAL1="Keluar"
+LOCAL2="Penginstal Codec"
+LOCAL3="Uji koneksi internet gagal!\n\nMungkin anda TIDAK terhubung ke Internet, atau server repositori utama sedang mati.\n\\nPeriksa dan coba lagi."
+LOCAL4="Ini akan menginstal codec dan plugin multimedia, misalnya:"
+LOCAL5="Pastikan sistem anda sudah diperbarui sebelum mulai.\n\nIngin menginstal sekarang?"
+LOCAL6="Tidak ada paket yang di-instal! \nSekarang keluar..."
+LOCAL7="Jika semuanya berjalan dengan baik, codec sudah ter-instal sekarang.\nJika tidak, coba lagi, atau laporkan ke forum Sparky.\n\nKlik OK untuk keluar."
+LOCAL8="Hapus"
+LOCAL9="Instal ulang"
+LOCAL10="Instal"
+LOCAL11="Paket ini sudah ter-instal."
+LOCAL12="Apa yang mau anda lakukan sekarang?"
+LOCAL13="Apakah mau menginstal paket yang anda pilih?"
+LOCAL14="Ada yang salah!\nMungkin anda menghentikan proses instal, atau koneksi internet anda terputus, atau paket tidak ada untuk versi sistem anda.\nPeriksa dan coba lagi."
+LOCAL15="Keluar..."
+LOCAL16="Paket ini tidak tersedia untuk versi sistem anda."
+LOCAL17="Paket telah berhasil di-instal."
+### .desktop file to be translated too
+# Name[id_ID]=Instal codec multimedia
+# Comment[id_ID]=Instal codec dan plugin multimedia
