@@ -2,24 +2,24 @@
 # Copyright 2015 PaweÅ‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
 # Traduzido por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 20/01/2016
 # Sob a Licença GNU GPL v2
-# Last update 2018/04/19 by pavroo
+# Last update 2018/07/27 by pavroo
 LOCAL1="Sair"
 LOCAL2="Instalador de Codecs"
-LOCAL3="Falhou o teste de conexão de Internet!\n\nProvavelmente voce NÃO está conetacdo na  Internet ou o servidor do repositório principal está fora do ar.\n\nVerifique isto e tente novamente."
-LOCAL4="Isto instalará os  codecs multimedia e complementos (plugins), tais como"
-LOCAL5="Esteja certo de que seu sistema esteja atualizado (apt-get update e apt-get upgrade, nota do tradutor) antes de começar a fazer isto. \nVoce gostaria de  instalar agora?"
-LOCAL6="Nenhum pacote foi  instalado! \nSaindo agora..."
-LOCAL7="Se tudo correu bem até agora, os  codecs serão  instalados agora.\nSe não, tente novamente  ou reporte esta falha para o forum do  Sparky.\n\nClick OK para sair."
-LOCAL8="Remove"
-LOCAL9="Reinstall"
-LOCAL10="Install"
-LOCAL11="This package is already installed."
-LOCAL12="What would you like to do now?"
-LOCAL13="Should I install the package you have chosen?"
-LOCAL14="Something is wrong! \nProbably you have stopped the installation, or your internet connection is broken, or the package is not availabel for you system version.\nCheck it out and try again."
-LOCAL15="Exiting..."
-LOCAL16="This package is not available for your system version."
-LOCAL17="The package has been successfully installed."
+LOCAL3="Falha no teste de conexão com a Internet!\n\nProvavelmente você NÃO está conectado à Internet ou o servidor de repositório principal está inativo.\n\nVerifique e tente novamente."
+LOCAL4="Isso instalará os codecs e plugins multimídia, como:"
+LOCAL5="Certifique-se de que seu sistema está atualizado antes de iniciar isso.\nDeseja instalar agora?"
+LOCAL6="Nenhum pacote foi instalado!\nSaindo agora..."
+LOCAL7="Se tudo correr bem, os codecs devem ser instalados agora.\nSe não, tente novamente ou reporte esta falha para o fórum do Sparky.\n\nClique OK para sair."
+LOCAL8="Remover"
+LOCAL9="Reinstalar"
+LOCAL10="Instalar"
+LOCAL11="Esse pacote já está instalado."
+LOCAL12="O que você gostaria de fazer agora?"
+LOCAL13="Gostaria de instalar o pacote que você escolheu?"
+LOCAL14="Algo está errado!\nProvavelmente você parou a instalação ou sua conexão com a Internet está bloqueada, ou o pacote não está disponível para sua versão do sistema.\nVerifique e tente novamente."
+LOCAL15="Saindo..."
+LOCAL16="Esse pacote não está disponível para a versão do seu sistema."
+LOCAL17="O pacote foi instalado com sucesso."
 ### .desktop file to be translated too
 # Name[pt_BR]=Instalar codecs multimedia
-# Comment[pt_BR]=Instalar codecs multimedia e complementos (plugins)
+# Comment[pt_BR]=Instalar codecs e plugins multimídia
