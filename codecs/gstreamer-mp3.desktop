@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=GStreamer MP3 Plugin
-Comment=GStreamer MP3 Plugin
-Exec=/usr/bin/sparky-codecs mp3
-Icon=gnome-audio
-Terminal=false
-Type=Application
-Categories=Multimedia;

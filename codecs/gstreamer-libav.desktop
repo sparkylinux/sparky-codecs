@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=GStreamer libav Plugin
+Comment=GStreamer libav Plugin
+Exec=/usr/bin/sparky-codecs libav
+Icon=gnome-audio
+Terminal=false
+Type=Application
+Categories=Multimedia;
