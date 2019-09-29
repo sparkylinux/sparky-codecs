@@ -1,0 +1,24 @@
+# Hungarian localization file for Sparky Codecs. (Translated by Nemomen)
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
+# Under the GNU GPL v2
+# Last update 2018/04/19 by pavroo
+LOCAL1="Kilépés"
+LOCAL2="Kodekek Telepítő"
+LOCAL3="Az Internet kapcsolati teszt sikertelen!\n\nLehet, hogy Ön NEM kapcsolódik az Internet-hálózatra vagy a fő tárolószerver nem érhető el.\n\nEllenőrizze és próbálja újra!”
+LOCAL4="Ez telepíteni fogja a multimédiás kodekeket és kiegészítőket (codecs and plugins), mint például:"
+LOCAL5="Legyen biztos benne, hogy a rendszere naprakész, mielőtt ezt elindítja. \nKívánja most telepíteni?
+LOCAL6="Nincsen csomag telepítve! \nKilépés most..."
+LOCAL7="Ha minden rendben ment, a kodekek telepítve vannak.\nHa nem, próbálja újra vagy jelezze a Sparky Fórumokon.\n\nKattintson OK-t a kilépéshez!"
+LOCAL8="Eltávolítás"
+LOCAL9="Újratelepítés"
+LOCAL10="Telepítés"
+LOCAL11="Ez a csomag már telepítve van."
+LOCAL12="Mit kíván most tenni?"
+LOCAL13="Telepíthetem az Ön által kiválasztott csomagot?"
+LOCAL14="Valami hibás! \nTalán megszakította a telepítést, vagy megszakadt az Internet kapcsolat, vagy a csomag nem érhető el az Ön rendszer-változatához.\nEllenőrizze és próbálja újra!”
+LOCAL15="Kilépés..."
+LOCAL16="Ez a csomag nem érhető el az Ön rendszer változatához."
+LOCAL17="A csomag sikeresen telepítve."
+### .desktop file to be translated too
+# Name[en_US]=Install multimedia codecs
+# Comment[en_US]=Install multimedia codecs and plugins
