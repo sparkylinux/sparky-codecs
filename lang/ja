@@ -1,25 +1,26 @@
 # Japanese localization file for Sparky Codecs.
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
 # Under the GNU GPL v2
-# Translated to Japanese by BALLOON a.k.a. Fu-sen.
 # Last update 2018/04/19 by pavroo
+# Translated to Japanese by BALLOON a.k.a. Fu-sen.
+# Translated to Japanese by FuRuYa7.
 LOCAL1="終了"
-LOCAL2="コーデックインストーラー"
-LOCAL3="インターネット接続に失敗しました！\n\nインターネットに接続されていないか、メインのリポジトリサーバがダウンしています。\n\n確認の上、再度行って下さい。"
+LOCAL2="コーデック インストールツール"
+LOCAL3="インターネット接続に失敗しました！\n\nおそらくインターネットに接続されていないか、メインのリポジトリサーバがダウンしています。\n\n確認して、もう一度試してください。"
 LOCAL4="次のマルチメディアコーデック・プラグインをインストールします:"
-LOCAL5="これを動作する前に、システムが最新の状態であることを確認して下さい \nインストールしてよろしいですか？"
+LOCAL5="これを実行する前に、システムが最新の状態であることを確認して下さい \nインストールしてよろしいですか？"
 LOCAL6="パッケージはインストールされませんでした！ \n終了します..."
-LOCAL7="正常であればコーデックはインストールされいます。\nそうでない場合は再試行するか、Sparky のフォーラムに報告してください。\n\nOK のクリックで終了します。"
-LOCAL8="Remove"
-LOCAL9="Reinstall"
-LOCAL10="Install"
-LOCAL11="This package is already installed."
-LOCAL12="What would you like to do now?"
-LOCAL13="Should I install the package you have chosen?"
-LOCAL14="Something is wrong! \nProbably you have stopped the installation, or your internet connection is broken, or the package is not availabel for you system version.\nCheck it out and try again."
-LOCAL15="Exiting..."
-LOCAL16="This package is not available for your system version."
-LOCAL17="The package has been successfully installed."
+LOCAL7="正常であればコーデックはインストールされています。\nそうでない場合は再試行するか、Sparky のフォーラムに報告してください。\n\nOK のクリックで終了します。"
+LOCAL8="削除"
+LOCAL9="再インストール"
+LOCAL10="インストール"
+LOCAL11="このパッケージはすでにインストールされています。"
+LOCAL12="今何がしたいですか？"
+LOCAL13="選択したパッケージをインストールしますか？"
+LOCAL14="問題があります！\nおそらくインストールを停止したか、インターネットに接続されていないか、パッケージがシステムバージョンに対応していない可能性があります。\n確認して、もう一度試してください。"
+LOCAL15="終了しています..."
+LOCAL16="このパッケージは、ご使用のシステムバージョンでは使用できません。"
+LOCAL17="パッケージが正常にインストールされました。"
 ### .desktop file to be translated too
 # Name[ja_JP]=マルチメディアコーデックのインストール
-# Comment[ja_JP]=マルチメディアコーデック・プラグインをインストールします
+# Comment[ja_JP]=マルチメディアコーデックとプラグインをインストール
