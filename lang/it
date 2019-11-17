@@ -1,24 +1,24 @@
 # File di localizzazione italiano per Sparky Codecs.
-# Copyright 2015 Carlo‚ "malato" Troiani <abbassolafrangetta@gmail.com> 23/10/2015
+# Copyright 2015 Carlo "malato" Troiani <abbassolafrangetta@gmail.com> 23/10/2015
 # Rilasciato sotto licenza GNU GPL v2
-# Last update 2018/04/19 by pavroo
+# Last update 2019/11/16 by Carlo
 LOCAL1="Esci"
 LOCAL2="Codecs Installer"
-LOCAL3="Test della connessione internet fallito!\n\nProbabilmente NON sei connesso ad internet od il server con i repository è offline.\n\nControlla e prova di nuovo."
+LOCAL3="Test della connessione internet fallito!\n\nProbabilmente NON sei connesso ad internet od il server con i repository e' offline.\n\nControlla e prova di nuovo."
 LOCAL4="Installa i codecs multimediali ed i plugin, come:"
 LOCAL5="Prima di iniziare, assicurati che il tuo sistema sia aggiornato. \nVuoii procedere con l'installazione adesso?"
-LOCAL6="Nessun pacchetto è stato installato! \nSto uscendo..."
-LOCAL7="Se tutto è andato per il meglio, i codecs dovrebbero essere stati installati.\nAltrimenti prova a riferire sui Forum di Sparky.\n\nClicca su OK per uscire."
-LOCAL8="Remove"
-LOCAL9="Reinstall"
-LOCAL10="Install"
-LOCAL11="This package is already installed."
-LOCAL12="What would you like to do now?"
-LOCAL13="Should I install the package you have chosen?"
-LOCAL14="Something is wrong! \nProbably you have stopped the installation, or your internet connection is broken, or the package is not availabel for you system version.\nCheck it out and try again."
-LOCAL15="Exiting..."
-LOCAL16="This package is not available for your system version."
-LOCAL17="The package has been successfully installed."
+LOCAL6="Nessun pacchetto e' stato installato! \nSto uscendo..."
+LOCAL7="Se tutto e' andato per il meglio, i codecs dovrebbero essere stati installati.\nAltrimenti prova a riferire sui Forum di Sparky.\n\nClicca su OK per uscire."
+LOCAL8="Rimuovi"
+LOCAL9="Reinstalla"
+LOCAL10="Installa"
+LOCAL11="Questo pacchetto e' gia' stato installato."
+LOCAL12="Cosa vuoi fare adesso?"
+LOCAL13="Devo installare il pacchetto che hai scelto?"
+LOCAL14="Qualcosa e' andato storto! \nProbabilmente hai interrotto l'installazione, o la connessione internet e' caduta, od il pacchetto non e' disponibile per la tua versione del sistemma operativo.\nControlla e riprova."
+LOCAL15="Sto uscendo..."
+LOCAL16="Questo pacchetto non e' disponibile per la tua versione del sistema operativo."
+LOCAL17="Il pacchetto e' stato installato correttamente."
 ### .desktop file to be translated too
 # Name[it_IT]=Installa codec multimediali
 # Comment[it_IT]=Installa i codec multimediali ed i plugin

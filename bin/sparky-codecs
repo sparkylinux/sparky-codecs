@@ -5,12 +5,14 @@
 #
 # Copyright 2014-2019 Paweł "pavroo" Pijanowski <pavroo@onet.eu>
 # Licensed under the GPLv2 license
-# Last update 2019/09/29
+# Last update 2019/11/17
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-codecs"
 if [ "`cat /etc/default/locale | grep de`" != "" ]; then
 . $DEFLOCDIR/de
+elif [ "`cat /etc/default/locale | grep el`" != "" ]; then
+. $DEFLOCDIR/el
 elif [ "`cat /etc/default/locale | grep es`" != "" ]; then
 . $DEFLOCDIR/es
 elif [ "`cat /etc/default/locale | grep fr`" != "" ]; then
