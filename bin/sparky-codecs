@@ -5,7 +5,7 @@
 #
 # Copyright 2014-2019 Paweł "pavroo" Pijanowski <pavroo@onet.eu>
 # Licensed under the GPLv2 license
-# Last update 2019/11/17
+# Last update 2019/12/15
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-codecs"
@@ -66,6 +66,7 @@ fi
 ARCH64="`uname -m | grep x86_64`"
 ARCH32="`uname -m | grep 686`"
 ARCHARM="`uname -m | grep arm`"
+SPARKYVERCHECK6="`cat /etc/os-release | grep Tolo`"
 
 # check connection
 PINGTEST=$(ping -c 1 debian.org | grep [0-9])
@@ -102,7 +103,11 @@ case $1 in
 	PACKAGE="libdvd-pkg"
      ;;
   libdvdread)
-	PACKAGE="libdvdread4"
+	if [ "$SPARKYVERCHECK6" != "" ]; then
+		PACKAGE="libdvdread7"
+	else
+		PACKAGE="libdvdread4"
+	fi
      ;;
   lame)
 	PACKAGE="lame"
