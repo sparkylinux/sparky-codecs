@@ -3,9 +3,9 @@
 # Sparky Codecs Installer lets you install multimedia codecs via one click.
 # It installs support for: mp3, xvid/divx, dvd, flash plugin, etc.
 #
-# Copyright 2014-2019 Paweł "pavroo" Pijanowski <pavroo@onet.eu>
+# Copyright 2014-2020 Paweł "pavroo" Pijanowski <pavroo@onet.eu>
 # Licensed under the GPLv2 license
-# Last update 2019/12/15
+# Last update 2020/04/16
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-codecs"
@@ -67,6 +67,8 @@ ARCH64="`uname -m | grep x86_64`"
 ARCH32="`uname -m | grep 686`"
 ARCHARM="`uname -m | grep arm`"
 SPARKYVERCHECK6="`cat /etc/os-release | grep Tolo`"
+SPARKYVERCHECK5="`cat /etc/os-release | grep Nibiru`"
+SPARKYVERCHECK4="`cat /etc/os-release | grep Tyche`"
 
 # check connection
 PINGTEST=$(ping -c 1 debian.org | grep [0-9])
@@ -103,10 +105,10 @@ case $1 in
 	PACKAGE="libdvd-pkg"
      ;;
   libdvdread)
-	if [ "$SPARKYVERCHECK6" != "" ]; then
-		PACKAGE="libdvdread7"
-	else
+	if [ "$SPARKYVERCHECK5" != "" ] || [ "$SPARKYVERCHECK4" != "" ]; then
 		PACKAGE="libdvdread4"
+	else
+		PACKAGE="libdvdread8"
 	fi
      ;;
   lame)
