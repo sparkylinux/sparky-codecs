@@ -3,9 +3,9 @@
 # Sparky Codecs Installer lets you install multimedia codecs via one click.
 # It installs support for: mp3, xvid/divx, dvd, flash plugin, etc.
 #
-# Copyright 2014-2020 Paweł "pavroo" Pijanowski <pavroo@onet.eu>
+# Copyright 2014-2021 Paweł "pavroo" Pijanowski <pavroo@onet.eu>
 # Licensed under the GPLv2 license
-# Last update 2020/10/08
+# Last update 2021/03/02
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-codecs"
@@ -89,10 +89,18 @@ case $1 in
 		$DIALOG $TEXT"\n$LOCAL16\n$LOCAL15" $TITLE"$TITLETEXT" $MSGBOX
 		exit 1
 	fi
+	if [ "$SPARKYVERCHECK5" = "" ] || [ "$SPARKYVERCHECK4" = "" ]; then
+		$DIALOG $TEXT"\n$LOCAL16\n$LOCAL15" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
 	PACKAGE="flashplayer-chromium"
      ;;
   flash-mozilla)
 	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL16\n$LOCAL15" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	if [ "$SPARKYVERCHECK5" = "" ] || [ "$SPARKYVERCHECK4" = "" ]; then
 		$DIALOG $TEXT"\n$LOCAL16\n$LOCAL15" $TITLE"$TITLETEXT" $MSGBOX
 		exit 1
 	fi
